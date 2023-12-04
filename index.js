@@ -15,70 +15,70 @@ const zapatosData = [
     "Estilo": "Sportline",
     "Modelo": 2343,
     "PrecioPorPar": "$5",
-    "Imagen": "1.jpg"
+    "Imagen": "1.jpeg"
   },
   {
     "id": 2,
     "Estilo": "Forever 18",
     "Modelo": 6557,
     "PrecioPorPar": "$6",
-    "Imagen": "2.jpg"
+    "Imagen": "2.jpeg"
   },
   {
     "id": 3,
     "Estilo": "Sportline Pala",
     "Modelo": 9878,
     "PrecioPorPar": "$4",
-    "Imagen": "3.jpg"
+    "Imagen": "3.jpeg"
   },
   {
     "id": 4,
     "Estilo": "Thinner",
     "Modelo": 7867,
     "PrecioPorPar": "$7",
-    "Imagen": "4.jpg"
+    "Imagen": "4.jpeg"
   },
   {
     "id": 5,
     "Estilo": "Sportline Negro/Amarillo",
     "Modelo": 9599,
     "PrecioPorPar": "$8",
-    "Imagen": "5.jpg"
+    "Imagen": "5.jpeg"
   },
   {
     "id": 6,
     "Estilo": "Kangooros",
     "Modelo": 5557,
     "PrecioPorPar": "$",
-    "Imagen": "6.jpg"
+    "Imagen": "6.jpeg"
   },
   {
     "id": 7,
     "Estilo": "Sportile Negro/Fiusha",
     "Modelo": 9599,
     "PrecioPorPar": "$8",
-    "Imagen": "7.jpg"
+    "Imagen": "7.jpeg"
   },
   {
     "id": 8,
     "Estilo": "Sportine Rosa",
     "Modelo": 6756,
     "PrecioPorPar": "$5",
-    "Imagen": "8.jpg"
+    "Imagen": "8.jpeg"
   },
   {
     "id": 9,
     "Estilo": "Pink Rojo",
     "Modelo": 3342,
     "PrecioPorPar": "$3",
-    "Imagen": "9.jpg"
+    "Imagen": "9.jpeg"
   },
   {
     "id": 10,
     "Estilo": "Dorothy Gaynor",
     "Modelo": 5546,
     "PrecioPorPar": 4,
-    "Imagen": "10.jpg"
+    "Imagen": "10.jpeg"
   }
 ];
 
