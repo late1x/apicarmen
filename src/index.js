@@ -2,13 +2,13 @@ const express = require('express');
 const morgan = require('morgan');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.set('json spaces', 2);
-
 app.use(morgan('dev'));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
-// Datos de películas
 const zapatosData = [
   {
     "id": 1,
@@ -82,10 +82,16 @@ const zapatosData = [
   }
 ];
 
+// Ruta para obtener datos de zapatos
 app.get('/api/zapatos', (req, res) => {
   res.json(zapatosData);
 });
 
+// Rutas adicionales (si tienes más rutas definidas en tus archivos routes)
+// app.use(require('./routes/index'));
+// app.use('/api/calzado', require('./routes/calzado'));
+
+// Iniciando el servidor
 app.listen(port, () => {
   console.log(`Servidor iniciado en http://localhost:${port}`);
 });
