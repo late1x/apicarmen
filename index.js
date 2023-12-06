@@ -95,10 +95,6 @@ const MobiliarioData = [
 ];
 
 
-app.get('/api/banquetes', (req, res) => {
-  res.json(BanquetesData);
-});
-
 app.get('/api/mobiliario', (req, res) => {
   res.json(MobiliarioData);
 });
