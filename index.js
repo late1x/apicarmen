@@ -76,7 +76,7 @@ const MobiliarioData = [
     producto: "Mesas de Servicio con Mantel",
     cantidadProducto: 2,
     totalCotizacion: 70.0,
-    imagen: "3.jpeg"
+    imagen: "3.jpg"
   },
   {
     idProducto: "4",
@@ -90,7 +90,7 @@ const MobiliarioData = [
     producto: "Cuchillo",
     cantidadProducto: 15,
     totalCotizacion: 37.50,
-    imagen: "5.jpeg"
+    imagen: "5.jpg"
   }
 ];
 
