@@ -8,82 +8,99 @@ app.set('json spaces', 2);
 
 app.use(morgan('dev'));
 
-// Datos de películas
-const zapatosData = [
+const BanquetesData = [
   {
-    "id": 1,
-    "Estilo": "Sportline",
-    "Modelo": 2343,
-    "PrecioPorPar": "$5",
-    "Imagen": "1.jpeg"
+    idBanquete: "1",
+    platoEntrada: "Ensalada",
+    platoFuerte: "Filete",
+    bebida: "Vino tinto",
+    persona: 10,
+    precioPorPersona: 25.0,
+    cotizacionTotal: 250.0
   },
   {
-    "id": 2,
-    "Estilo": "Forever 18",
-    "Modelo": 6557,
-    "PrecioPorPar": "$6",
-    "Imagen": "2.jpeg"
+    idBanquete: "2",
+    platoEntrada: "Cóctel de Fruta",
+    platoFuerte: "Carne de Puerco",
+    bebida: "Coca Cola",
+    persona: 7,
+    precioPorPersona: 77.0,
+    cotizacionTotal: 250.0
   },
   {
-    "id": 3,
-    "Estilo": "Sportline Pala",
-    "Modelo": 9878,
-    "PrecioPorPar": "$4",
-    "Imagen": "3.jpeg"
+    idBanquete: "3",
+    platoEntrada: "Cafe",
+    platoFuerte: "Frijoles al chipotle",
+    bebida: "Jugo de Naranja",
+    persona: 12,
+    precioPorPersona: 127.0,
+    cotizacionTotal: 250.0
   },
   {
-    "id": 4,
-    "Estilo": "Thinner",
-    "Modelo": 7867,
-    "PrecioPorPar": "$7",
-    "Imagen": "4.jpeg"
+    idBanquete: "4",
+    platoEntrada: "Pan Dulce",
+    platoFuerte: "Enchiladas Verdes",
+    bebida: "Sprite",
+    persona: 3,
+    precioPorPersona: 170.0,
+    cotizacionTotal: 250.0
   },
   {
-    "id": 5,
-    "Estilo": "Sportline Negro/Amarillo",
-    "Modelo": 9599,
-    "PrecioPorPar": "$8",
-    "Imagen": "5.jpeg"
-  },
-  {
-    "id": 6,
-    "Estilo": "Kangooros",
-    "Modelo": 5557,
-    "PrecioPorPar": "$",
-    "Imagen": "6.jpeg"
-  },
-  {
-    "id": 7,
-    "Estilo": "Sportile Negro/Fiusha",
-    "Modelo": 9599,
-    "PrecioPorPar": "$8",
-    "Imagen": "7.jpeg"
-  },
-  {
-    "id": 8,
-    "Estilo": "Sportine Rosa",
-    "Modelo": 6756,
-    "PrecioPorPar": "$5",
-    "Imagen": "8.jpeg"
-  },
-  {
-    "id": 9,
-    "Estilo": "Pink Rojo",
-    "Modelo": 3342,
-    "PrecioPorPar": "$3",
-    "Imagen": "9.jpeg"
-  },
-  {
-    "id": 10,
-    "Estilo": "Dorothy Gaynor",
-    "Modelo": 5546,
-    "PrecioPorPar": 4,
-    "Imagen": "10.jpeg"
+    idBanquete: "5",
+    platoEntrada: "Empanadas",
+    platoFuerte: "Enchiladas Rojas",
+    bebida: "Coca Cola",
+    persona: 4,
+    precioPorPersona: 90.0,
+    cotizacionTotal: 250.0
   }
 ];
 
-app.get('/api/zapatos', (req, res) => {
-  res.json(zapatosData);
+const MobiliarioData = [
+  {
+    idProducto: "1",
+    producto: "Sillas",
+    cantidadProducto: 20,
+    totalCotizacion: 500.0,
+    imagen: "1.png"
+  },
+  {
+    idProducto: "2",
+    producto: "Tablones con Mantel",
+    cantidadProducto: 6,
+    totalCotizacion: 420.0,
+    imagen: "2.jpeg"
+  },
+  {
+    idProducto: "3",
+    producto: "Mesas de Servicio con Mantel",
+    cantidadProducto: 2,
+    totalCotizacion: 70.0,
+    imagen: "3.jpeg"
+  },
+  {
+    idProducto: "4",
+    producto: "Plato Extendido",
+    cantidadProducto: 15,
+    totalCotizacion: 45.0,
+    imagen: "4.jpeg"
+  },
+  {
+    idProducto: "5",
+    producto: "Cuchillo",
+    cantidadProducto: 15,
+    totalCotizacion: 37.50,
+    imagen: "5.jpeg"
+  }
+];
+
+
+app.get('/api/banquetes', (req, res) => {
+  res.json(BanquetesData);
+});
+
+app.get('/api/mobiliario', (req, res) => {
+  res.json(MobiliarioData);
 });
 
 app.listen(port, () => {
